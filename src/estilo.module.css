@@ -103,7 +103,7 @@
     
     .containerResultado {
         background-color: #FDF1DC;
-        padding: 1rem 0;
+        padding: 0.5rem 0;
         border-top: 5px solid #E69A28;
         border-bottom: 5px solid #E69A28;
         margin-top: 2rem;
@@ -112,17 +112,19 @@
     }
     
     .hp {
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: #7A200D;
         font-weight: bolder;
     }
     
     .negrita {
+        font-size: 0.5rem;
         font-weight: bolder;
         color: #7A200D;
     }
     
     span {
+        font-size: 0.5rem;
         font-weight: 400;
         color: #7A200D;
     }
