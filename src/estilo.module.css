@@ -24,7 +24,7 @@
         font-size: 1rem;
         text-align: center;
     }
-    
+
     input[type="checkbox"] {
         transform: scale(1.5);
         margin-left: 0.75rem;
@@ -32,6 +32,36 @@
 
     p {
         margin: 0;
+    }
+
+    .containerResultado {
+        background-color: #FDF1DC;
+        padding: 1rem 0;
+        border-top: 5px solid #E69A28;
+        border-bottom: 5px solid #E69A28;
+        margin-top: 3rem;
+        font-size: 1.25rem;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .hp {
+        font-size: 2rem;
+        color: #7A200D;
+        font-weight: bolder;
+    }
+
+    .negrita {
+        font-weight: bolder;
+        color: #7A200D;
+    }
+
+    span {
+        font-weight: 400;
+        color: #7A200D;
+    }
+
+    .separador {
+        color: #922610;
     }
 }
 
