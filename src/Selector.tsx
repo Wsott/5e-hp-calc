@@ -1,5 +1,6 @@
 import { ChangeEvent, useEffect, useState } from "react";
 import { calculatorData, callbackFunction } from "./App";
+import estilo from "./estilo.module.css";
 
 export default function Selector ( {actualizarResultados}: callbackFunction ) {
     const [dado, setDado] = useState(0);
@@ -78,11 +79,12 @@ export default function Selector ( {actualizarResultados}: callbackFunction ) {
     }
 
     return (
-        <div>
+        <div className={estilo.containerSelector}>
+            <hr/>
             <div>
                 <label htmlFor="class">Mi personaje es un </label>
                 <select name="class" id="class" onChange={handleClase} defaultValue={"selectOne"}>
-                    <option value={"selectOne"}>Elegi una clase</option>
+                    <option value={"selectOne"} disabled={true}>Elegi una clase</option>
                     <option value={"barbaro"}>Barbaro</option>
                     <option value={"bardo"}>Bardo</option>
                     <option value={"clerigo"}>Clerigo</option>
@@ -104,7 +106,7 @@ export default function Selector ( {actualizarResultados}: callbackFunction ) {
                 <input type="number" name="con" id="con" defaultValue={0} min={-5} max={5} onChange={handleCon}/>
             </div>
             <div>
-                <label htmlFor="duro">... tiene el dote de Duro?</label>
+                <label htmlFor="duro">... tiene el dote de vigoroso?</label>
                 <input type="checkbox" name="duro" id="duro" onChange={() => handleModifier("duro")} checked={duro}/><br/>
                 <label htmlFor="enano">... es un enano de colina?</label>
                 <input type="checkbox" name="enano" id="enano" onChange={() => handleModifier("colina")} checked={enanoColina}/><br/>

@@ -1,13 +1,14 @@
 import { calculatorResults } from "./App";
+import estilo from "./estilo.module.css";
 
 export default function Resultado (data: calculatorResults) {
     return (
-        <div>
-            <h3>{data.hp}</h3>
-            <p>Dado de golpe: d{data.dado}</p>
-            <p>Modificador de CON: {data.con}</p>
-            <p>HP a nivel 1: {data.hpInicial}</p>
-            <p>HP en los siguientes niveles: {data.hpSiguienteNivel}</p>
+        <div className={estilo.containerResultado}>
+            <p className={estilo.hp}>{data.hp}</p>
+            <p className={estilo.negrita}>Dado de golpe: <span>d{data.dado}</span></p>
+            <p className={estilo.negrita}>Modificador de CON: <span>{data.con}</span></p>
+            <p className={estilo.negrita}>HP a nivel 1: <span>{data.hpInicial}</span></p>
+            <p className={estilo.negrita}>HP en los siguientes niveles: <span>+{data.hpSiguienteNivel}</span></p>
         </div>
     )
 }
