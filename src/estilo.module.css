@@ -14,16 +14,25 @@
         margin: 0px;
     }
 
-.containerSelector {
-    margin: 0px;
-    font-size: 1rem;
-}
+    .containerSelector {
+        margin: 0px;
+        font-size: 1rem;
+    }
 
-input,
-select {
-    font-size: 1rem;
-    text-align: center;
-}
+    input,
+    select {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    input[type="checkbox"] {
+        transform: scale(1.5);
+        margin-left: 0.75rem;
+    }
+
+    p {
+        margin: 0;
+    }
 }
 
 @media screen and (min-width: 501px) {
